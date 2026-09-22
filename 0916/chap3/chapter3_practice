@@ -1,5 +1,5 @@
-### 1번: 9개의 버튼을 가진 웹 페이지 작성[cite: 4]
-```html
+## 1번: 9개의 버튼을 가진 웹 페이지 작성[cite: 4]
+html
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,10 +14,12 @@
     <button>7</button> <button>8</button> <button>0</button>
 </body>
 </html>
-```
+
+
 ---
+
   
-###2번: <figure>와 <figcaption> 태그를 이용한 웹 브라우저 소개 문서HTML<!DOCTYPE html>
+## 2번: <figure>와 <figcaption> 태그를 이용한 웹 브라우저 소개 문서HTML<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -58,9 +60,11 @@
 </body>
 </html>
 
+
 ---
+
                       
-3번: <fieldset>, <legend>, <label> 태그를 이용한 로그인 폼HTML<!DOCTYPE html>
+## 3번: <fieldset>, <legend>, <label> 태그를 이용한 로그인 폼HTML<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -79,9 +83,11 @@
 </body>
 </html>
 
+
 ---
+
                       
-4번: <details>와 <summary> 태그를 이용한 웹 프로그래밍 개요HTML<!DOCTYPE html>
+## 4번: <details>와 <summary> 태그를 이용한 웹 프로그래밍 개요HTML<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -109,9 +115,11 @@
 </body>
 </html>
 
+
 ---
+
                       
-5번: 다양한 폼 요소를 이용한 도형 서식 입력 폼HTML<!DOCTYPE html>
+## 5번: 다양한 폼 요소를 이용한 도형 서식 입력 폼HTML<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
