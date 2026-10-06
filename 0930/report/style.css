@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;800&display=swap');
+
+/* 공통 리셋 및 폰트 설정 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* 카드 및 섹션 부드러운 호버 인터랙션 */
+section {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section:hover {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+}
+
+/* 스킬 태그 호버 */
+#skill li {
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+#skill li:hover {
+  transform: translateY(-2px);
+}
+
+/* 링크 전환 효과 */
+a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* 테이블 기본 정렬 */
+table {
+  border-collapse: collapse;
+}
+
+/* 커스텀 스크롤바 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* About Me 카드 호버 시 위로 살짝 올라가는 효과 (#up:hover 스타일) */
+.up, #up {
+  position: relative;
+  bottom: 0px;
+  transition: bottom 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.up:hover, #up:hover {
+  position: relative;
+  bottom: 8px; /* 위로 살짝 올라가게 설정 */
+  box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.04);
+  border-color: #c7d2fe; /* 은은한 인디고 테두리 */
+}
