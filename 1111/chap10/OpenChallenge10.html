@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>눈 내리는 사걀의 마을</title>
+    <style>
+      body {
+        background-image: url("../image/snow.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin: 0;
+        overflow: hidden; /* 눈이 화면 밖으로 나갈 때 스크롤바 방지 */
+      }
+      div.snow {
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        user-select: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const N = 30; // 눈의 개수
+      let snows = []; // 눈 div 객체 배열
+
+      // 화면 크기 구하기
+      function getWidth() {
+        return window.innerWidth;
+      }
+      function getHeight() {
+        return window.innerHeight;
+      }
+
+      // 30개의 눈(div)을 만들어 랜덤한 위치에 뿌리기
+      for (let i = 0; i < N; i++) {
+        let div = document.createElement("div");
+        div.className = "snow";
+        div.innerHTML = "*";
+        div.style.left = Math.floor(Math.random() * getWidth()) + "px";
+        div.style.top = Math.floor(Math.random() * getHeight()) + "px";
+        div.speed = Math.floor(Math.random() * 3) + 1; // 눈마다 내리는 속도 다르게(1~3px)
+        document.body.appendChild(div);
+        snows.push(div);
+      }
+
+      // 눈 내리기 : 일정 시간마다 div 위치 갱신
+      function fall() {
+        for (let i = 0; i < snows.length; i++) {
+          let div = snows[i];
+          let top = parseInt(div.style.top) + div.speed;
+          let left =
+            parseInt(div.style.left) + Math.floor(Math.random() * 3) - 1; // 좌우로 살짝 흔들림
+
+          // 바닥 근처에 닿으면 다시 위에서부터 내리기
+          if (top > getHeight() - 30) {
+            top = 0;
+            left = Math.floor(Math.random() * getWidth());
+          }
+          if (left < 0) left = 0;
+          if (left > getWidth() - 20) left = getWidth() - 20;
+
+          div.style.top = top + "px";
+          div.style.left = left + "px";
+        }
+      }
+
+      setInterval(fall, 30); // 30ms 간격으로 눈의 위치 갱신
+    </script>
+  </body>
+</html>
