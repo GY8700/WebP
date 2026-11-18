@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="소프트웨어공학을 공부하며 웹과 사용자 경험을 탐구하는 학생의 개인 포트폴리오 웹사이트입니다." />
+  <meta name="theme-color" content="#fafbff" />
+  <meta property="og:title" content="Myfolio — Personal Portfolio" />
+  <meta property="og:description" content="배우고, 만들고, 성장하는 과정을 기록합니다." />
+  <title>Myfolio — Personal Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-fill"></span></div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Myfolio 홈으로 이동">myfolio<span class="brand-dot">.</span></a>
+      <nav class="desktop-nav" aria-label="주 메뉴">
+        <a href="#about" data-nav>소개</a>
+        <a href="#skills" data-nav>기술</a>
+        <a href="#interests" data-nav>관심 분야</a>
+        <a href="#journey" data-nav>성장 기록</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="icon-button theme-toggle" aria-label="다크 모드 켜기" aria-pressed="false" title="테마 전환">
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13.2A9 9 0 0 1 10.8 3.1a9 9 0 1 0 10.1 10.1Z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <a class="header-contact" href="#contact">연락하기 <span aria-hidden="true">↗</span></a>
+        <button type="button" class="icon-button menu-toggle" id="menu-toggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴" hidden>
+      <a href="#about">소개</a>
+      <a href="#skills">기술</a>
+      <a href="#interests">관심 분야</a>
+      <a href="#journey">성장 기록</a>
+      <a href="#contact">연락하기</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero-section" id="home" aria-labelledby="hero-title">
+      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> SOFTWARE ENGINEERING · PORTFOLIO</div>
+          <p class="hero-greeting">안녕하세요, 반갑습니다 <span aria-hidden="true">👋</span></p>
+          <h1 id="hero-title">작은 아이디어에서<br /><span class="highlight-word">좋은 경험</span>으로.</h1>
+          <p class="hero-description">소프트웨어공학을 공부하며, 복잡한 문제를 이해하기 쉬운 화면과 코드로 풀어내는 방법을 배우고 있습니다.</p>
+          <div class="hero-buttons">
+            <a href="#about" class="button button-primary">저에 대해 알아보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+            <a href="#contact" class="button button-quiet">연락처 보기 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-bottom-note"><span class="mini-status" aria-hidden="true"></span> 배우고, 실험하고, 꾸준히 성장하는 중</div>
+        </div>
+        <div class="hero-visual" aria-label="프로그래밍 관심 분야를 표현한 장식용 코드 카드">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="code-window">
+            <div class="code-topbar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>about-me.js</span><span class="topbar-symbol" aria-hidden="true">⌘</span></div>
+            <div class="code-content" aria-hidden="true">
+              <div class="code-line"><span class="line-no">01</span><span><span class="token-purple">const</span> <span class="token-blue">developer</span> = {</span></div>
+              <div class="code-line"><span class="line-no">02</span><span class="indent"><span class="token-sky">major</span>: <span class="token-green">'Software Engineering'</span>,</span></div>
+              <div class="code-line"><span class="line-no">03</span><span class="indent"><span class="token-sky">interests</span>: [</span></div>
+              <div class="code-line"><span class="line-no">04</span><span class="indent-more"><span class="token-green">'Web'</span>, <span class="token-green">'UI/UX'</span>,</span></div>
+              <div class="code-line"><span class="line-no">05</span><span class="indent-more"><span class="token-green">'Problem Solving'</span></span></div>
+              <div class="code-line"><span class="line-no">06</span><span class="indent">],</span></div>
+              <div class="code-line"><span class="line-no">07</span><span class="indent"><span class="token-sky">mindset</span>: <span class="token-green">'Keep learning'</span></span></div>
+              <div class="code-line"><span class="line-no">08</span><span>};</span></div>
+              <div class="code-line"><span class="line-no">09</span><span></span></div>
+              <div class="code-line"><span class="line-no">10</span><span><span class="token-blue">console</span>.<span class="token-purple">log</span>(<span class="token-green">'Hello, world! ✨'</span>);</span></div>
+            </div>
+            <div class="code-footer"><span class="code-footer-dot"></span> Ready to learn something new <span class="code-footer-side">UTF-8 · JS</span></div>
+          </div>
+          <div class="floating-note floating-note-top" aria-hidden="true"><span class="note-icon">✦</span> Stay curious</div>
+          <div class="floating-note floating-note-bottom" aria-hidden="true"><span class="note-check">✓</span> One step at a time</div>
+        </div>
+      </div>
+      <div class="container hero-divider"><span>SCROLL TO EXPLORE</span><span class="scroll-arrow" aria-hidden="true">↓</span></div>
+    </section>
+
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">01 / ABOUT ME</span>
+          <h2 id="about-title">코드를 배우는 것에서,<br /><span class="soft-text">문제를 이해하는 것까지.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p class="about-lead">안녕하세요. 소프트웨어공학을 공부하고 있는 학생입니다.</p>
+            <p>새로운 기술이 어떻게 동작하는지 궁금해하고, 하나씩 직접 구현해 보면서 배워가는 과정을 좋아합니다. 특히 웹에서 사용자가 보는 화면과 그 뒤에서 작동하는 로직에 관심이 있습니다.</p>
+            <p>지금은 기본기를 탄탄하게 다지면서, 어렵게 느껴지는 문제도 차근차근 해결할 수 있는 개발자로 성장하는 것이 목표입니다.</p>
+            <a class="inline-link" href="#journey">앞으로의 목표 살펴보기 <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="values-grid reveal">
+            <article class="value-card"><div class="value-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M11 8v6m-3-3h6"/></svg></div><h3>호기심</h3><p>새로운 기술의 원리를 탐색하고 직접 확인합니다.</p></article>
+            <article class="value-card"><div class="value-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3Z"/><path d="M19 18v4m-2-2h4"/></svg></div><h3>꾸준한 학습</h3><p>작은 개념부터 차근차근 쌓아갑니다.</p></article>
+            <article class="value-card"><div class="value-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 22h8m-4-4v4M7 9h10m-10 4h6"/></svg></div><h3>사용자 관점</h3><p>기술만큼이나 편리한 경험을 중요하게 생각합니다.</p></article>
+            <div class="about-mini-card" aria-hidden="true"><span>LEARN</span><span class="about-mini-arrow">↗</span><strong>THINK.<br />BUILD.<br />GROW.</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-heading section-heading-split reveal">
+          <div><span class="section-kicker">02 / SKILLS & TOOLS</span><h2 id="skills-title">지금 배우고 있는<br /><span class="soft-text">기술과 도구들.</span></h2></div>
+          <p class="section-side-text">기술은 계속 배워가는 중입니다. 각 카드에 제가 관심을 두고 학습하는 영역을 정리했습니다.</p>
+        </div>
+        <div class="filter-bar reveal" role="group" aria-label="기술 분류 필터">
+          <button type="button" class="filter-chip active" data-filter="all" aria-pressed="true">전체 <span>06</span></button>
+          <button type="button" class="filter-chip" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button type="button" class="filter-chip" data-filter="programming" aria-pressed="false">Programming</button>
+          <button type="button" class="filter-chip" data-filter="tools" aria-pressed="false">Tools</button>
+        </div>
+        <div class="skills-grid" id="skills-grid">
+          <article class="skill-card reveal" data-category="frontend"><div class="skill-icon skill-html" aria-hidden="true">&lt;/&gt;</div><div><h3>HTML5</h3><span>Frontend</span></div><p>문서 구조와 시맨틱 마크업</p><span class="skill-corner" aria-hidden="true">↗</span></article>
+          <article class="skill-card reveal" data-category="frontend"><div class="skill-icon skill-css" aria-hidden="true">#</div><div><h3>CSS3</h3><span>Frontend</span></div><p>반응형 레이아웃과 스타일링</p><span class="skill-corner" aria-hidden="true">↗</span></article>
+          <article class="skill-card reveal" data-category="frontend"><div class="skill-icon skill-js" aria-hidden="true">JS</div><div><h3>JavaScript</h3><span>Frontend</span></div><p>DOM 조작과 인터랙션 구현</p><span class="skill-corner" aria-hidden="true">↗</span></article>
+          <article class="skill-card reveal" data-category="programming"><div class="skill-icon skill-java" aria-hidden="true">{ }</div><div><h3>Java</h3><span>Programming</span></div><p>객체지향 프로그래밍의 기초</p><span class="skill-corner" aria-hidden="true">↗</span></article>
+          <article class="skill-card reveal" data-category="tools"><div class="skill-icon skill-git" aria-hidden="true">⑂</div><div><h3>Git</h3><span>Tools</span></div><p>버전 관리와 변경 이력 기록</p><span class="skill-corner" aria-hidden="true">↗</span></article>
+          <article class="skill-card reveal" data-category="tools"><div class="skill-icon skill-vscode" aria-hidden="true">⌘</div><div><h3>VS Code</h3><span>Tools</span></div><p>코드 작성과 개발 환경 구성</p><span class="skill-corner" aria-hidden="true">↗</span></article>
+        </div>
+        <p class="skills-footnote reveal">* 기술 수준을 과장하지 않고, 현재 학습하거나 사용해 본 기술을 중심으로 작성한 예시입니다.</p>
+      </div>
+    </section>
+
+    <section class="section interests-section" id="interests" aria-labelledby="interests-title">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-kicker">03 / INTERESTS</span><h2 id="interests-title">저를 움직이게 하는<br /><span class="soft-text">세 가지 관심사.</span></h2></div>
+        <div class="interests-grid">
+          <article class="interest-card reveal"><div class="interest-header"><span class="interest-number">01</span><span class="interest-art interest-art-web" aria-hidden="true"><svg viewBox="0 0 130 110" fill="none"><rect x="10" y="14" width="110" height="82" rx="12" stroke="currentColor" stroke-width="2"/><path d="M10 36h110" stroke="currentColor" stroke-width="2"/><circle cx="25" cy="25" r="3" fill="currentColor"/><circle cx="36" cy="25" r="3" fill="currentColor"/><path d="m52 56-12 13 12 12m26-25 12 13-12 12m-9-30-9 37" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div><div><h3>Web Development</h3><p>브라우저에서 동작하는 웹 기술과 프론트엔드 개발에 관심이 있습니다.</p></div><span class="interest-tag">BUILD FOR THE WEB</span></article>
+          <article class="interest-card reveal"><div class="interest-header"><span class="interest-number">02</span><span class="interest-art interest-art-ux" aria-hidden="true"><svg viewBox="0 0 130 110" fill="none"><rect x="16" y="9" width="82" height="91" rx="10" stroke="currentColor" stroke-width="2"/><rect x="28" y="24" width="58" height="20" rx="5" fill="currentColor" opacity=".14"/><path d="M28 55h46M28 65h32M28 75h40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="m83 61 23 8-11 4-4 11-8-23Z" fill="currentColor"/><path d="m96 75 10 11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span></div><div><h3>UI / UX Design</h3><p>좋은 서비스가 가진 명확한 구조와 직관적인 화면을 관찰합니다.</p></div><span class="interest-tag">DESIGN WITH PURPOSE</span></article>
+          <article class="interest-card reveal"><div class="interest-header"><span class="interest-number">03</span><span class="interest-art interest-art-tech" aria-hidden="true"><svg viewBox="0 0 130 110" fill="none"><rect x="38" y="22" width="54" height="60" rx="9" stroke="currentColor" stroke-width="2"/><path d="M48 11v11m17-11v11m17-11v11M48 82v11m17-11v11m17-11v11M27 34h11m-11 18h11m-11 18h11m54-36h11m-11 18h11m-11 18h11" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="m65 35-9 17h11l-4 17 13-21H65l5-13" fill="currentColor" opacity=".8"/></svg></span></div><div><h3>New Technology</h3><p>새로운 개발 도구와 기술이 만들어 내는 가능성을 탐색합니다.</p></div><span class="interest-tag">ALWAYS EXPLORING</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section journey-section" id="journey" aria-labelledby="journey-title">
+      <div class="container journey-layout">
+        <div class="section-heading journey-heading reveal"><span class="section-kicker">04 / MY JOURNEY</span><h2 id="journey-title">오늘의 배움이<br /><span class="soft-text">내일의 실력이 되도록.</span></h2><p>완성된 결과보다, 이해하고 개선해 나가는 과정을 소중하게 생각합니다.</p></div>
+        <div class="timeline">
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div><span class="timeline-label">NOW · 현재</span><h3>기본기 다지기</h3><p>HTML, CSS, JavaScript와 프로그래밍 기초를 배우고 직접 실습하고 있습니다.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div><span class="timeline-label">NEXT · 다음 단계</span><h3>작은 기능을 완성하는 경험</h3><p>배운 내용을 활용해 작은 웹 기능을 구현하고, 스스로 수정하고 개선하는 능력을 기르고 싶습니다.</p></div></article>
+          <article class="timeline-item reveal"><span class="timeline-dot"></span><div><span class="timeline-label">GOAL · 앞으로</span><h3>문제를 해결하는 개발자</h3><p>사용자의 입장에서 생각하고, 기술로 실제 문제를 해결할 수 있는 개발자로 성장하는 것이 목표입니다.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-panel reveal">
+          <div class="contact-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="contact-content"><span class="section-kicker">05 / CONTACT</span><h2 id="contact-title">좋은 대화는,<br /><span>여기에서 시작해요.</span></h2><p>궁금한 점이나 나누고 싶은 이야기가 있다면 편하게 연락해 주세요.</p><div class="contact-actions"><button type="button" class="button button-primary" id="copy-email">이메일 복사하기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></svg></button><a href="https://github.com" id="github-link" class="button button-outline" target="_blank" rel="noopener noreferrer">GitHub 보기 <span aria-hidden="true">↗</span></a></div><p class="contact-email" id="email-display">yourname@example.com</p><p class="contact-example-note" id="contact-placeholder-note">* 예시 이메일입니다. 실제 제출 전 연락처를 수정해 주세요.</p></div>
+          <div class="contact-big-symbol" aria-hidden="true">@</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-inner"><a href="#home" class="brand">myfolio<span class="brand-dot">.</span></a><span>© <span id="current-year">2026</span> Myfolio. Made with curiosity.</span><a href="#top" class="back-to-top">맨 위로 <span aria-hidden="true">↑</span></a></div></footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
